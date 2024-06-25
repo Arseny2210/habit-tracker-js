@@ -5,10 +5,60 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link href="/dist/output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class='py-6 px-10'>
+	<!-- Header -->
+	<header class='flex items-center justify-between mb-10'>
+		<!-- Title -->
+		<h1 class='font-bold text-4xl'>My Challenges</h1>
+		<button class='font-semibold text-5xl'>+</button>
 
+		<!-- Form -->
+		<div class='absolute top-6 right-10 p-5 bg-white shadow-lg rounded-lg hidden'>
+			<label>
+				<input class='outline-none'="text" placeholder='Enter habit name'>
+			</label>
+			<button class='bg-black text-white cursor-pointer py-1 px-3 rounded'>Add</button>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<main>
+		<!-- Progress line-->
+		<section class='rounded-xl bg-black p-5 mb-10 '>
+			<div class='text-white font-semibold mb-4 text-2xl text-center'>You are almost there!</div>
+			<div class='bg-[#262923] text-center rounded-lg overflow-hidden font-semibold text-lg'>
+				<div class='bg-[#F5F6F7]' style='width: 40%;'>40%</div>
+			</div>
+		</section>
+
+		<!-- Challenges -->
+		<section>
+			<div class='mb-8'>
+				<div class='flex items-center gap-4 mb-5'>
+					<img src="./assets/img/habbit-1.svg" width='70' class='rounded-3xl border-2 border-[#E2E4DD] border-solid'
+						alt="">
+					<span class='font-semibold text-2xl'>No caffeine</span>
+				</div>
+
+				<!-- Progress check-->
+				<div class='flex items-center gap-6'>
+					<button class='bg-black rounded-full 	h-12 w-12 flex items-center justify-center'>
+						<img src="./assets/img/check.svg" width='25' alt="">
+					</button>
+
+					<button
+						class='rounded-full border-2 border-solid border-black opacity-20	h-12 w-12 flex items-center justify-center text-lg uppercase font-semibold'>
+						W
+					</button>
+				</div>
+
+			</div>
+		</section>
+
+	</main>
 </body>
 
 </html>
